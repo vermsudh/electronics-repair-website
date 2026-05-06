@@ -95,7 +95,7 @@ const Navbar = () => {
           >
             <span
               className={`block h-0.5 w-5 bg-gray-700 rounded-full transition-all duration-300 origin-center ${
-                menuOpen ? "rotate-45 translate-y-[7px]" : ""
+                menuOpen ? "rotate-45 translate-y-1.75" : ""
               }`}
             />
             <span
@@ -105,7 +105,7 @@ const Navbar = () => {
             />
             <span
               className={`block h-0.5 w-5 bg-gray-700 rounded-full transition-all duration-300 origin-center ${
-                menuOpen ? "-rotate-45 translate-y-[-7px]" : ""
+                menuOpen ? "-rotate-45 translate-y-1.75" : ""
               }`}
             />
           </button>

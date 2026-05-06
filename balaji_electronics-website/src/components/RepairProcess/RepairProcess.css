@@ -1,0 +1,30 @@
+@reference "../../index.css";
+
+/* ── Section ── */
+.rp-section           { @apply w-full bg-gray-50 py-20 md:py-28; }
+.rp-container         { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
+
+/* ── Heading ── */
+.rp-heading-wrap      { @apply flex flex-col items-center text-center gap-4 mb-14; }
+.rp-badge             { @apply text-xs font-semibold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-1.5 rounded-full; }
+.rp-heading           { @apply text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight; }
+.rp-subheading        { @apply text-base sm:text-lg text-gray-500 max-w-xl leading-relaxed; }
+
+/* ── Steps Row ── */
+.rp-steps-row         { @apply flex flex-col md:flex-row items-stretch gap-0; }
+
+/* ── Step Wrapper ── */
+.rp-step-wrap         { @apply flex flex-col md:flex-row items-center flex-1 relative; }
+
+/* ── Card — group stays in JSX ── */
+.rp-card              { @apply w-full flex-1 bg-white rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center gap-4 p-8 h-full; }
+.rp-card-number       { @apply text-white text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center shadow-md; }
+.rp-card-icon-wrap    { @apply w-16 h-16 rounded-2xl flex items-center justify-center text-3xl transition-transform duration-300; }
+.rp-card-text         { @apply flex flex-col gap-2; }
+.rp-card-title        { @apply text-base font-bold text-gray-900 tracking-tight transition-colors duration-200; }
+.rp-card-desc         { @apply text-sm text-gray-500 leading-relaxed; }
+
+/* ── Connectors ── */
+.rp-arrow-desktop     { @apply hidden md:flex items-center justify-center w-10 shrink-0; }
+.rp-arrow-mobile      { @apply flex md:hidden items-center justify-center h-8; }
+.rp-arrow-icon        { @apply w-6 h-6 text-gray-300; }

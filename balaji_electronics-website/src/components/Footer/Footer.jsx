@@ -1,77 +1,53 @@
 import React from "react";
 import { footerContent } from "./FooterData";
+import "./Footer.css";
 
 const Footer = () => {
   const { brand, links, contact, copyright } = footerContent;
 
   return (
-    <footer className="w-full bg-gray-900 text-gray-400">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <footer className="footer-root">
+      <div className="footer-container">
 
-        {/* Top Row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+        {/* Top Grid */}
+        <div className="footer-grid">
 
           {/* Brand */}
-          <div className="flex flex-col gap-4">
+          <div className="footer-brand-wrap">
             <div>
-              <h3 className="text-xl font-bold text-white tracking-tight">
-                Sri Balaji <span className="text-blue-400">Electronics</span>
+              <h3 className="footer-brand-name">
+                Sri Balaji <span className="footer-brand-accent">Electronics</span>
               </h3>
-              <p className="text-xs text-gray-500 uppercase tracking-widest mt-0.5">
-                {brand.subtitle}
-              </p>
+              <p className="footer-brand-sub">{brand.subtitle}</p>
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed">
-              {brand.description}
-            </p>
+            <p className="footer-brand-desc">{brand.description}</p>
           </div>
 
           {/* Quick Links */}
-          <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold text-white uppercase tracking-widest">
-              Quick Links
-            </h4>
-            <ul className="flex flex-col gap-2.5">
+          <div className="footer-links-wrap">
+            <h4 className="footer-links-title">Quick Links</h4>
+            <ul className="footer-links-list">
               {links.map((link) => (
                 <li key={link.id}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-gray-400 hover:text-blue-400 transition-colors duration-200"
-                  >
-                    {link.label}
-                  </a>
+                  <a href={link.href} className="footer-link">{link.label}</a>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Contact */}
-          <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold text-white uppercase tracking-widest">
-              Contact
-            </h4>
-            <ul className="flex flex-col gap-3">
-              <li className="flex items-start gap-2 text-sm">
+          <div className="footer-contact-wrap">
+            <h4 className="footer-contact-title">Contact</h4>
+            <ul className="footer-contact-list">
+              <li className="footer-contact-item">
                 <span>📞</span>
-                <a
-                  href={`tel:${contact.phone}`}
-                  className="hover:text-blue-400 transition-colors duration-200"
-                >
-                  {contact.phone}
-                </a>
+                <a href={`tel:${contact.phone}`} className="footer-contact-phone">{contact.phone}</a>
               </li>
-              <li className="flex items-start gap-2 text-sm">
+              <li className="footer-contact-item">
                 <span>💬</span>
-                <a
-                  href={contact.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-green-400 transition-colors duration-200"
-                >
-                  WhatsApp Us
-                </a>
+                <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="footer-contact-wa">WhatsApp Us</a>
               </li>
-              <li className="flex items-start gap-2 text-sm">
+              <li className="footer-contact-item">
                 <span>📍</span>
                 <span>{contact.address}</span>
               </li>
@@ -80,10 +56,10 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-gray-800 mb-6" />
+        <div className="footer-divider" />
 
-        {/* Bottom Row */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
+        {/* Bottom */}
+        <div className="footer-bottom">
           <span>{copyright}</span>
           <span>Built with ❤️ for local businesses</span>
         </div>

@@ -1,0 +1,97 @@
+@reference "../../index.css";
+
+.hero-section {
+  @apply w-full bg-white min-h-[calc(100vh-5rem)] flex items-center;
+}
+
+.hero-container {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 w-full;
+}
+
+.hero-inner {
+  @apply flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16;
+}
+
+.hero-content {
+  @apply flex-1 flex flex-col gap-6 text-center md:text-left;
+}
+
+.hero-badge {
+  @apply inline-flex items-center self-center md:self-start gap-2 bg-blue-50 text-blue-600 text-xs font-semibold px-4 py-1.5 rounded-full tracking-widest uppercase;
+}
+
+.hero-badge-dot {
+  @apply w-2 h-2 bg-blue-500 rounded-full animate-pulse;
+}
+
+.hero-headline {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight;
+}
+
+.hero-headline-accent {
+  @apply text-blue-600;
+}
+
+.hero-subheadline {
+  @apply text-base sm:text-lg text-gray-500 leading-relaxed max-w-lg mx-auto md:mx-0;
+}
+
+.hero-features {
+  @apply flex flex-col sm:flex-row gap-3 justify-center md:justify-start mt-1;
+}
+
+.hero-feature-item {
+  @apply flex items-center gap-2 bg-gray-50 hover:bg-blue-50 border border-gray-100 hover:border-blue-100 text-gray-700 text-sm font-medium px-4 py-2.5 rounded-xl transition-colors duration-200;
+}
+
+.hero-buttons {
+  @apply flex flex-col sm:flex-row gap-3 justify-center md:justify-start mt-2;
+}
+
+.hero-btn-call {
+  @apply flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-semibold text-sm px-7 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200;
+}
+
+.hero-btn-whatsapp {
+  @apply flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 active:scale-95 text-white font-semibold text-sm px-7 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200;
+}
+
+.hero-btn-icon {
+  @apply h-4 w-4;
+}
+
+.hero-trust {
+  @apply text-xs text-gray-400 mt-1;
+}
+
+.hero-image-wrapper {
+  @apply flex-1 w-full flex justify-center;
+}
+
+.hero-image-container {
+  @apply relative w-full max-w-md;
+}
+
+.hero-image-blob {
+  @apply absolute -inset-4 bg-blue-50 rounded-3xl -z-10;
+}
+
+.hero-image {
+  @apply w-full h-[480px] object-cover rounded-2xl shadow-xl;
+}
+
+.hero-floating-badge {
+  @apply absolute -bottom-4 -left-4 bg-white border border-gray-100 shadow-lg rounded-2xl px-5 py-3 flex items-center gap-3;
+}
+
+.hero-floating-icon {
+  @apply w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white text-lg;
+}
+
+.hero-floating-label {
+  @apply text-xs text-gray-400 font-medium;
+}
+
+.hero-floating-value {
+  @apply text-sm font-bold text-gray-800;
+}
