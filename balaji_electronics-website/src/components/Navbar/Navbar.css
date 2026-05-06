@@ -1,0 +1,10 @@
+/* Reserve space so page content isn't hidden under the fixed navbar */
+body {
+  padding-top: 4rem; /* 64px — matches h-16 */
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 5rem; /* 80px — matches h-20 */
+  }
+}
