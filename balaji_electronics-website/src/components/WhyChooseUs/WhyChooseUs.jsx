@@ -33,7 +33,7 @@ const FeatureCard = ({ feature }) => {
 
 const WhyChooseUs = () => {
   return (
-    <section className="wcu-section">
+    <section id="about" className="wcu-section">
       <div className="wcu-container">
 
         {/* Heading */}
