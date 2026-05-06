@@ -26,19 +26,34 @@ const ContactInfoItem = ({ item }) => (
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", phone: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleWhatsAppSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    const { name, phone, message } = formData;
+
+    const whatsappMessage =
+`Hello Sri Balaji Electronics,
+
+Name: ${name}
+Phone: ${phone}
+
+Issue:
+${message}
+
+Please contact me regarding this repair request.`;
+
+    const whatsappUrl = `https://wa.me/919810485083?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappUrl, "_blank");
+
     setFormData({ name: "", phone: "", message: "" });
-    setTimeout(() => setSubmitted(false), 4000);
   };
 
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <div className="contact-container">
 
         {/* Heading */}
@@ -92,30 +107,50 @@ const Contact = () => {
           <div className="contact-form-inner">
             <h3 className="contact-form-title">Send Us a Message</h3>
 
-            {submitted && (
-              <div className="contact-form-success">
-                <span className="text-lg">✅</span>
-                Message sent successfully! We'll get back to you soon.
-              </div>
-            )}
-
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form onSubmit={handleWhatsAppSubmit} className="contact-form">
               <div className="contact-form-row">
                 <div className="contact-form-field">
                   <label className="contact-form-label">Your Name</label>
-                  <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Rajesh Kumar" required className="contact-form-input" />
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Suraj Verma"
+                    required
+                    className="contact-form-input"
+                  />
                 </div>
                 <div className="contact-form-field">
                   <label className="contact-form-label">Phone Number</label>
-                  <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="+91 98765 43210" required className="contact-form-input" />
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="+91 98104 85083"
+                    required
+                    className="contact-form-input"
+                  />
                 </div>
               </div>
               <div className="contact-form-field">
                 <label className="contact-form-label">Message</label>
-                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Describe your device issue..." required rows={5} className="contact-form-textarea" />
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Describe your device issue..."
+                  required
+                  rows={5}
+                  className="contact-form-textarea"
+                />
               </div>
-              <button type="submit" className="contact-form-submit">Send Message →</button>
+              <button type="submit" className="contact-form-submit">
+                💬 Send on WhatsApp
+              </button>
             </form>
+
           </div>
         </div>
 

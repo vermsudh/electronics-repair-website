@@ -61,7 +61,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="footer-bottom">
           <span>{copyright}</span>
-          <span>Built with ❤️ for local businesses</span>
+          <span>Reliable electronics service since 25+ years</span>
         </div>
 
       </div>

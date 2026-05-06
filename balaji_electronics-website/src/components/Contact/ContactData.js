@@ -6,28 +6,32 @@ export const sectionContent = {
 export const contactInfo = {
   phone: {
     label: "Phone Number",
-    value: "+91 98765 43210",
-    href: "tel:+919876543210",
+    value: "+91 98104 85083",
+    href: "tel:+919810485083",
     icon: "📞",
   },
+
   whatsapp: {
     label: "WhatsApp",
-    value: "+91 98765 43210",
-    href: "https://wa.me/919876543210",
+    value: "+91 98104 85083",
+    href: "https://wa.me/919810485083",
     icon: "💬",
   },
+
   address: {
     label: "Business Address",
-    value: "123, Anna Salai, T. Nagar, Chennai, Tamil Nadu - 600017",
+    value:
+      "F-3, First Floor, Manish Plaza, Sector-10, Plot No-7, Near Enigma Gym, Dwarka, New Delhi - 110075",
     icon: "📍",
   },
+
   hours: {
     label: "Working Hours",
-    value: "Mon – Sat: 9:00 AM – 7:00 PM",
-    subValue: "Sunday: 10:00 AM – 4:00 PM",
+    value: "Mon – Sunday: 10:00 AM – 8:00 PM",
+    subValue: "Wednesday: Emergency support available",
     icon: "🕐",
   },
 };
 
 export const mapEmbedUrl =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7932!2d80.2329!3d13.0418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAyJzMwLjUiTiA4MMKwMTMnNTguNCJF!5e0!3m2!1sen!2sin!4v1234567890";
+  "https://maps.google.com/maps?q=Enigma%20Fitness%20Dwarka&t=&z=15&ie=UTF8&iwloc=&output=embed";

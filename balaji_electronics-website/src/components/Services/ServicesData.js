@@ -1,3 +1,14 @@
+import screen_broken from "../../assets/screen_broken.jpg";
+import tv_back_repair from "../../assets/tv_back_repair.jpg";
+import microwave_repair from "../../assets/microwave_repair.jpg";
+import plasma_tv_repair from "../../assets/plasma_tv_repair.jpg";
+import motherboard from "../../assets/motherboard.jpg";
+import speaker_sony from "../../assets/speaker_sony.jpg";
+import air_conditioner from "../../assets/air_conditioner.jpg";
+import OLED_repair from "../../assets/OLED_repair.jpg";
+import LCD_repair from "../../assets/LCD_repair.jpg";
+
+
 export const sectionContent = {
   heading: "Our Services",
   subheading:
@@ -11,8 +22,7 @@ export const services = [
     title: "LED TV Repair",
     description:
       "Expert diagnosis and repair of all LED TV brands including Sony, Samsung, LG and more. Fast turnaround guaranteed.",
-    image:
-      "https://images.unsplash.com/photo-1593359677879-a4bb92f829e1?w=600&auto=format&fit=crop&q=80",
+    image: tv_back_repair,
   },
   {
     id: 2,
@@ -20,8 +30,7 @@ export const services = [
     title: "OLED TV Repair",
     description:
       "Specialised repair for premium OLED panels. Screen burn-in treatment, panel replacement and backlight repair.",
-    image:
-      "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=600&auto=format&fit=crop&q=80",
+    image:OLED_repair,
   },
   {
     id: 3,
@@ -29,8 +38,7 @@ export const services = [
     title: "LCD TV Repair",
     description:
       "Complete LCD television repair services — inverter board, backlight, display panel and power supply fixes.",
-    image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
+    image: LCD_repair ,
   },
   {
     id: 4,
@@ -38,8 +46,7 @@ export const services = [
     title: "Plasma TV Repair",
     description:
       "Plasma display repair including sustain board, scan board replacements and plasma cell restoration.",
-    image:
-      "https://images.unsplash.com/photo-1615986201152-7686a4867f30?w=600&auto=format&fit=crop&q=80",
+    image: plasma_tv_repair,
   },
   {
     id: 5,
@@ -47,8 +54,7 @@ export const services = [
     title: "Screen Replacement",
     description:
       "Cracked or damaged screen? We replace displays for TVs, monitors and appliance panels with genuine parts.",
-    image:
-      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&auto=format&fit=crop&q=80",
+    image: screen_broken,
   },
   {
     id: 6,
@@ -56,8 +62,7 @@ export const services = [
     title: "Motherboard Repair",
     description:
       "Component-level motherboard repair for televisions and home appliances. IC replacement and PCB restoration.",
-    image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80",
+    image: motherboard,
   },
   {
     id: 7,
@@ -65,8 +70,7 @@ export const services = [
     title: "Microwave Repair",
     description:
       "Magnetron replacement, door latch, turntable motor and PCB repair for all microwave oven brands.",
-    image:
-      "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=600&auto=format&fit=crop&q=80",
+    image: microwave_repair,
   },
   {
     id: 8,
@@ -74,8 +78,7 @@ export const services = [
     title: "AC Repair",
     description:
       "Air conditioner servicing, gas refilling, compressor repair and PCB replacement for split and window ACs.",
-    image:
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&auto=format&fit=crop&q=80",
+    image: air_conditioner,
   },
   {
     id: 9,
@@ -83,7 +86,6 @@ export const services = [
     title: "Music System Repair",
     description:
       "Home theatre, amplifier and speaker system repair. Audio board, woofer and Bluetooth module replacement.",
-    image:
-      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&auto=format&fit=crop&q=80",
+    image: speaker_sony,
   },
 ];

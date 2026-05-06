@@ -8,10 +8,10 @@ export const heroContent = {
     { id: 3, icon: "🛠️", label: "Expert Technician" },
   ],
   buttons: {
-    call: { label: "Call Now", phone: "tel:+919876543210" },
+    call: { label: "Call Now", phone: "tel:+919810485083" },
     whatsapp: {
       label: "WhatsApp",
-      link: "https://wa.me/919876543210",
+      link: "https://wa.me/9810485083",
     },
   },
   image: {

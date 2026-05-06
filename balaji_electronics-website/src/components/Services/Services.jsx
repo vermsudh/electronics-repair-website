@@ -38,7 +38,7 @@ const ServiceCard = ({ service }) => {
 
 const Services = () => {
   return (
-    <section className="services-section">
+    <section id="services" className="services-section">
       <div className="services-container">
 
         {/* Heading */}

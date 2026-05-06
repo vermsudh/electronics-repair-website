@@ -3,13 +3,13 @@ export const footerContent = {
     name: "Sri Balaji Electronics",
     subtitle: "25+ Years Experience",
     description:
-      "Trusted electronics repair service in Chennai. Expert technicians, genuine spare parts, and fast doorstep service.",
+      "Trusted electronics repair services across Delhi & Delhi NCR. Expert technicians, genuine spare parts, and quick doorstep assistance.",
   },
   links: [
-    { id: 1, label: "Home",       href: "/" },
-    { id: 2, label: "Services",   href: "/services" },
-    { id: 3, label: "About",      href: "/about" },
-    { id: 4, label: "Contact",    href: "/contact" },
+    { id: 1, label: "Home",         href: "/"          },
+    { id: 2, label: "Services",     href: "#services"  },
+    { id: 3, label: "About",        href: "#about"     },
+    { id: 4, label: "Contact",      href: "#contact"   },
   ],
   contact: {
     phone: "+91 98104 85083",
