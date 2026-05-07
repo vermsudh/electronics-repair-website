@@ -1,3 +1,5 @@
+import motherboardRepair from "../../assets/motherboard_repair.png";
+
 export const heroContent = {
   headline: "Trusted Electronics Repair Service",
   subheadline:
@@ -15,7 +17,7 @@ export const heroContent = {
     },
   },
   image: {
-    src: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&auto=format&fit=crop&q=80",
+    src: motherboardRepair,
     alt: "Electronics Repair Technician",
   },
 };
