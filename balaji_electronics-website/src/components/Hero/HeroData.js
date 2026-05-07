@@ -1,10 +1,4 @@
 import motherboardRepair from "../../assets/motherboard_repair.png";
-
-/* ── Partner Logos ── 
-   Place logo files inside: src/assets/logos/
-   Recommended format: PNG or SVG with transparent background
-*/
-
 import urbanCompanyLogo  from "/Users/sudhanshu/Developer/Sri_balaji_Electronics_website/balaji_electronics-website/src/assets/urban_company.png";
 import doorStepLogo      from "/Users/sudhanshu/Developer/Sri_balaji_Electronics_website/balaji_electronics-website/src/assets/door_step.png";
 import greenIndiaLogo    from "/Users/sudhanshu/Developer/Sri_balaji_Electronics_website/balaji_electronics-website/src/assets/green_india_team.jpeg";
