@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { navLinks, businessInfo } from "./NavbarData";
+import company_logo from "../../assets/company_logo.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -28,12 +29,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Logo / Brand */}
-          <div className="flex flex-col leading-tight select-none">
-            <span className="text-xl md:text-2xl font-bold tracking-tight text-gray-900">
-              Sri Balaji{" "}
-              <span className="text-blue-600">Electronics</span>
-            </span>
-            <span className="text-[11px] md:text-xs font-medium text-gray-400 tracking-widest uppercase">
+         <div className="flex flex-col items-start leading-tight select-none">
+            <img
+              src={company_logo}
+              alt="Sri Balaji Electronics"
+              className="h-10 md:h-14 w-auto object-contain select-none"
+            />
+            <span className="text-[11px] md:text-xs font-medium text-gray-400 tracking-widest uppercase mt-0.5">
               {businessInfo.subtitle}
             </span>
           </div>

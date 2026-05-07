@@ -7,6 +7,5 @@ export const navLinks = [
 
 export const businessInfo = {
   name: "Sri Balaji Electronics",
-  subtitle: "25+ Years Experience",
   phone: "+91 98104 85083",
 };
