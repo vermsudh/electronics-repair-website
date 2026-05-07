@@ -8,7 +8,7 @@ import RepairProcess from "./components/RepairProcess/RepairProcess";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   useEffect(() => {
