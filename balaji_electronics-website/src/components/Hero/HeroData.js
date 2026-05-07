@@ -1,5 +1,14 @@
 import motherboardRepair from "../../assets/motherboard_repair.png";
 
+/* ── Partner Logos ── 
+   Place logo files inside: src/assets/logos/
+   Recommended format: PNG or SVG with transparent background
+*/
+
+import urbanCompanyLogo  from "/Users/sudhanshu/Developer/Sri_balaji_Electronics_website/balaji_electronics-website/src/assets/urban_company.png";
+import doorStepLogo      from "/Users/sudhanshu/Developer/Sri_balaji_Electronics_website/balaji_electronics-website/src/assets/door_step.png";
+import greenIndiaLogo    from "/Users/sudhanshu/Developer/Sri_balaji_Electronics_website/balaji_electronics-website/src/assets/green_india_team.jpeg";
+
 export const heroContent = {
   headline: "Trusted Electronics Repair Service",
   subheadline:
@@ -10,12 +19,14 @@ export const heroContent = {
     { id: 3, icon: "🛠️", label: "Expert Technician" },
   ],
   buttons: {
-    call: { label: "Call Now", phone: "tel:+919810485083" },
-    whatsapp: {
-      label: "WhatsApp",
-      link: "https://wa.me/9810485083",
-    },
+    call:      { label: "Call Now",  phone: "tel:+919810485083" },
+    whatsapp:  { label: "WhatsApp",  link: "https://wa.me/919810485083" },
   },
+  partners: [
+    { id: 1, src: urbanCompanyLogo, alt: "Urban Company — Service Partner" },
+    { id: 2, src: doorStepLogo,     alt: "Door Step — Service Partner"     },
+    { id: 3, src: greenIndiaLogo,   alt: "Green India Team — Service Partner" },
+  ],
   image: {
     src: motherboardRepair,
     alt: "Electronics Repair Technician",
