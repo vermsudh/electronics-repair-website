@@ -1,7 +1,7 @@
 import motherboardRepair from "../../assets/motherboard_repair.png";
-import urbanCompanyLogo  from "/Users/sudhanshu/Developer/Sri_balaji_Electronics_website/balaji_electronics-website/src/assets/urban_company.png";
-import doorStepLogo      from "/Users/sudhanshu/Developer/Sri_balaji_Electronics_website/balaji_electronics-website/src/assets/door_step.png";
-import greenIndiaLogo    from "/Users/sudhanshu/Developer/Sri_balaji_Electronics_website/balaji_electronics-website/src/assets/green_india_team.jpeg";
+import urbanCompanyLogo  from "../../assets/urban_company.png";
+import doorStepLogo      from "../../assets/door_step.png";
+import greenIndiaLogo    from "../../assets/green_india_team.jpeg";
 
 export const heroContent = {
   headline: "Trusted Electronics Repair Service",
@@ -17,8 +17,8 @@ export const heroContent = {
     whatsapp:  { label: "WhatsApp",  link: "https://wa.me/919810485083" },
   },
   partners: [
-    { id: 1, src: urbanCompanyLogo, alt: "Urban Company — Service Partner" },
-    { id: 2, src: doorStepLogo,     alt: "Door Step — Service Partner"     },
+    { id: 1, src: doorStepLogo,     alt: "Door Step — Service Partner"     },
+    { id: 2, src: urbanCompanyLogo, alt: "Urban Company — Service Partner" },
     { id: 3, src: greenIndiaLogo,   alt: "Green India Team — Service Partner" },
   ],
   image: {
