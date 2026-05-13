@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <!-- Blue gradient matching website's primary blue -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2045;stop-opacity:1" />
+    </linearGradient>
+    <!-- Blue accent gradient for the lightning bolt -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <!-- Subtle inner glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark navy circle background -->
+  <circle cx="50" cy="50" r="50" fill="url(#bgGrad)"/>
+
+  <!-- Subtle circuit-board dot pattern (electronics theme) -->
+  <circle cx="15" cy="15" r="1.2" fill="#2563eb" opacity="0.3"/>
+  <circle cx="85" cy="15" r="1.2" fill="#2563eb" opacity="0.3"/>
+  <circle cx="15" cy="85" r="1.2" fill="#2563eb" opacity="0.3"/>
+  <circle cx="85" cy="85" r="1.2" fill="#2563eb" opacity="0.3"/>
+  <circle cx="15" cy="50" r="1" fill="#2563eb" opacity="0.2"/>
+  <circle cx="85" cy="50" r="1" fill="#2563eb" opacity="0.2"/>
+  <circle cx="50" cy="15" r="1" fill="#2563eb" opacity="0.2"/>
+  <circle cx="50" cy="85" r="1" fill="#2563eb" opacity="0.2"/>
+
+  <!-- Subtle circuit lines -->
+  <line x1="15" y1="15" x2="25" y2="15" stroke="#2563eb" stroke-width="0.6" opacity="0.2"/>
+  <line x1="15" y1="15" x2="15" y2="25" stroke="#2563eb" stroke-width="0.6" opacity="0.2"/>
+  <line x1="85" y1="15" x2="75" y2="15" stroke="#2563eb" stroke-width="0.6" opacity="0.2"/>
+  <line x1="85" y1="15" x2="85" y2="25" stroke="#2563eb" stroke-width="0.6" opacity="0.2"/>
+  <line x1="15" y1="85" x2="25" y2="85" stroke="#2563eb" stroke-width="0.6" opacity="0.2"/>
+  <line x1="15" y1="85" x2="15" y2="75" stroke="#2563eb" stroke-width="0.6" opacity="0.2"/>
+  <line x1="85" y1="85" x2="75" y2="85" stroke="#2563eb" stroke-width="0.6" opacity="0.2"/>
+  <line x1="85" y1="85" x2="85" y2="75" stroke="#2563eb" stroke-width="0.6" opacity="0.2"/>
+
+  <!-- "S" letter — bold, clean, matching the website's navy/blue style -->
+  <!-- Built from paths for crisp rendering at small sizes -->
+  <text
+    x="50"
+    y="62"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="52"
+    font-weight="700"
+    text-anchor="middle"
+    fill="white"
+    letter-spacing="-1"
+  >S</text>
+
+  <!-- Blue underline accent bar -->
+  <rect x="30" y="68" width="40" height="4" rx="2" fill="url(#accentGrad)"/>
+
+  <!-- Small lightning bolt icon (electronics symbol) on top-right -->
+  <polygon
+    points="58,18 54,28 57,28 53,38 62,25 58,25 62,18"
+    fill="url(#accentGrad)"
+    filter="url(#glow)"
+    opacity="0.9"
+  />
+
+  <!-- Outer ring accent -->
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.25"/>
+</svg>
